@@ -58,7 +58,7 @@ int gettimeofday(struct timeval *tp, void *tzp)
 
 int main(int argc, char **argv)
 {
-    struct addrinfo *answer, hint, *curr;
+    struct addrinfo *answer = NULL, hint, *curr;
     char ipstr[16];
     int ret, sfd;
     struct timeval time, time2;
